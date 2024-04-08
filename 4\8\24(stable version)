@@ -1,0 +1,40 @@
+import { StatusBar, Image, View, Alert, Button, StyleSheet, Text } from 'react-native';
+
+export default function App() {
+  const styles = StyleSheet.create({
+    box: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  });
+  return (
+    <View style={styles.box}>
+      <Text>Welcome to Jaydrians Robot </Text>
+      <Button 
+        onPress={() => Alert.alert('moving forward')}
+        title="Moveforward"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
+      <Button 
+        onPress={() => Alert.alert('moving back')}
+        title="Move back"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
+      <Button 
+        onPress={() => Alert.alert('turning right')}
+        title="Turn Right"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
+      <Button 
+        onPress={() => Alert.alert('turning left')}
+        title="Turn Left"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
+    </View>
+  );
+}
