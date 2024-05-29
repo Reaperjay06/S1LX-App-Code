@@ -1,0 +1,31 @@
+#include <iostream>
+
+// Function declaration
+bool isEven(int number);
+
+int main() {
+    // Variable to store the number entered by the user
+    int number;
+
+    // Ask the user for a number
+    std::cout << "Enter an integer: ";
+    std::cin >> number;
+
+    // Call the isEven function and store the result
+    bool result = isEven(number);
+
+    // Conditional statement to check if the number is even or odd
+    if (result) {
+        std::cout << number << " is even." << std::endl;
+    } else {
+        std::cout << number << " is odd." << std::endl;
+    }
+
+    return 0;
+}
+
+// Function to check if a number is even
+bool isEven(int number) {
+    // Return true if the number is even, otherwise return false
+    return (number % 2 == 0);
+}
