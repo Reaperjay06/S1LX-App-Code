@@ -51,6 +51,7 @@ void loop() {
   
     if (off==true) {
     digitalWrite( 5, HIGH);
+Serial.println( anologRead(5));
     }
     if( off==false){
     digitalWrite( 5,LOW) ;
